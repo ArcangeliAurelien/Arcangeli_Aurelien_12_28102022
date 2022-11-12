@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, Rectangle } from "recharts";
-import { usersAverage } from "../../mock/UsersData";
 import styled from "styled-components";
+import getData from "../../api/getData";
 
 /* ------------------------------------------------------------------------------------ */
 
@@ -66,7 +66,7 @@ const xAxisFormatter = (day) => {
 
 const Container = styled.div`
     position: relative;
-	max-width: 250px;
+	max-width: 280px;
     width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -88,8 +88,19 @@ const Title = styled.h2`
 
 function AverageChart() {
     const { id } = useParams()
-    const usersAverageData = usersAverage.find(user => user.userId === parseInt(id))
-    const userAverage = usersAverageData.sessions
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        const userData = async () => {
+            const request = await getData("usersAverage", id)
+            if (!request) return console.log("error")
+            setData(request.data)
+        }
+        userData()
+    }, [id])
+    if (data.length === 0) return null;
+
+    const userAverage = data.sessions
 
     return (
         <Container>

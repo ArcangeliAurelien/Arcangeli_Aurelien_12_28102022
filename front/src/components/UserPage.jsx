@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { users } from "../mock/UsersData";
 import '../styles/App.css';
 import ActivitiesChart from "./chart/BarChart";
 import AverageChart from "./chart/AreaChart";
 import ScoreChart from "./chart/PieChart";
 import RadarPerfChart from "./chart/RadarChart";
 import KeyData from "./KeyData";
+import getData from "../api/getData";
 
 function UserPage() {
     const { id } = useParams()
-    const userData = users.find(user => user.id === parseInt(id))
-    const userName = userData.userInfos.firstName
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        const userData = async () => {
+            const request = await getData("users", id)
+            if (!request) return console.log("error")
+            setData(request.data)
+        }
+        userData()
+    }, [id])
+    if (data.length === 0) return null;
+
+    const userName = data.userInfos.firstName
 
     return (
         <div className="blocText">

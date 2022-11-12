@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { usersPerformance } from "../../mock/UsersData";
 import { PolarAngleAxis, PolarGrid, Radar, RadarChart, ResponsiveContainer } from "recharts";
+import getData from "../../api/getData";
 
 const xAxisFormatter = (kind) => {
     switch (kind) {
@@ -18,7 +18,7 @@ const xAxisFormatter = (kind) => {
 
 const Container = styled.div`
     position: relative;
-	max-width: 250px;
+	max-width: 280px;
     width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -30,8 +30,19 @@ const Container = styled.div`
 
 function RadarPerfChart() {
     const { id } = useParams()
-    const userPerfData = usersPerformance.find(user => user.userId === parseInt(id))
-    const userPerf = userPerfData.data
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        const userData = async () => {
+            const request = await getData("usersPerformance", id)
+            if (!request) return console.log("error")
+            setData(request.data)
+        }
+        userData()
+    }, [id])
+    if (data.length === 0) return null;
+
+    const userPerf = data.data
 
     return (
         <Container>

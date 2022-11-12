@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { users } from "../../mock/UsersData";
 import styled from "styled-components";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import getData from "../../api/getData";
 
 const Container = styled.div`
     position: relative;
-    max-width: 250px;
+    max-width: 280px;
     width: 100%;
     background: #FBFBFB;
     border-radius: 5px;
@@ -46,10 +46,21 @@ const Score = styled.span`
 
 function ScoreChart() {
     const { id } = useParams()
-    const usersData = users.find(user => user.id === parseInt(id))
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        const userData = async () => {
+            const request = await getData("users", id)
+            if (!request) return console.log("error")
+            setData(request.data)
+        }
+        userData()
+    }, [id])
+    if (data.length === 0) return null;
+
     const score = [
-        { value: usersData.todayScore || usersData.score },
-        { value: 1 - usersData.todayScore || usersData.score },
+        { value: data.todayScore || data.score },
+        { value: 1 - data.todayScore || data.score },
     ];
 
     return (

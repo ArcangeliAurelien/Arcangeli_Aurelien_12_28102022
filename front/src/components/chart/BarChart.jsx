@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { usersActivities } from "../../mock/UsersData";
 import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts"
 import styled from "styled-components"
+import getData from "../../api/getData";
+
 
 const Wrapper = styled.div`
     max-width: 835px;
@@ -101,8 +102,19 @@ const xAxisFormatter = (day) => {
 
 function ActivitiesChart() {
     const { id } = useParams()
-    const userActivitiesData = usersActivities.find(user => user.userId === parseInt(id))
-    const userActivity = userActivitiesData.sessions
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        const userData = async () => {
+            const request = await getData("usersActivities", id)
+            if (!request) return console.log("error")
+            setData(request.data)
+        }
+        userData()
+    }, [id])
+    if (data.length === 0) return null;
+
+    const userActivity = data.sessions
 
     return (
         <Wrapper>
