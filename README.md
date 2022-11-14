@@ -15,13 +15,13 @@
 
 ## Launching Back-End
 
-1. Clone the repo of the back-end:
+1. Clone the repo of the back-end:\
     `git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git`
 
-2. Install the dependencies by running the command 
+2. Install the dependencies by running the command\
     `yarn install` or `npm install`
 
-3. Lauch the back-end on port 3000 ([http://localhost:3000](http://localhost:3000)) by running the command
+3. Lauch the back-end on port 3000 ([http://localhost:3000](http://localhost:3000)) by running the command\
     `yarn dev` or `npm run:dev`
 
 ## Endpoints
@@ -45,11 +45,11 @@ This project includes four endpoints that you will be able to use:
 
 ## Launching Front-End
 
-1. Clone the repo of the front-end:
+1. Clone the repo of the front-end:\
     `git clone https://github.com/ArcangeliAurelien/Arcangeli_Aurelien_12_28102022.git`
 
-2. Install the dependencies by running the command 
+2. Install the dependencies by running the command\
     `yarn install` or `npm install`
 
-3. Lauch the back-end on port 3001 ([http://localhost:3001](http://localhost:3001)) by running the command
+3. Lauch the back-end on port 3001 ([http://localhost:3001](http://localhost:3001)) by running the command\
     `yarn start` or `npm start`
