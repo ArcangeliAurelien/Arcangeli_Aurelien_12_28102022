@@ -16,15 +16,15 @@ function Header() {
                         <div>Accueil</div>
                     </Link>
 
-                    <Link to={`...`}>
+                    <Link to={`/error`}>
                         <div>Profil</div>
                     </Link>
 
-                    <Link to={`...`}>
+                    <Link to={`/error`}>
                         <div>Réglage</div>
                     </Link>
 
-                    <Link to={`...`}>
+                    <Link to={`/error`}>
                         <div>Communauté</div>
                     </Link>
                 </div>
