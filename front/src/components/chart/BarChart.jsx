@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts"
 import styled from "styled-components"
 import getData from "../../api/getData";
-
+import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
     max-width: 835px;
@@ -149,6 +149,10 @@ function ActivitiesChart() {
             </ResponsiveContainer>
         </Wrapper>
     )
+}
+
+ActivitiesChart.prototype = {
+    userActivity: PropTypes.array.isRequired
 }
 
 export default ActivitiesChart

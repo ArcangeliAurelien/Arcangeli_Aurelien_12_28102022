@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { PolarAngleAxis, PolarGrid, Radar, RadarChart, ResponsiveContainer } from "recharts";
 import getData from "../../api/getData";
+import PropTypes from "prop-types";
 
 const xAxisFormatter = (kind) => {
     switch (kind) {
@@ -59,6 +60,10 @@ function RadarPerfChart() {
             </ResponsiveContainer>
         </Container>
     )
+}
+
+RadarChart.prototype = {
+    userPerf: PropTypes.array.isRequired
 }
 
 export default RadarPerfChart

@@ -7,6 +7,7 @@ import ScoreChart from "./chart/PieChart";
 import RadarPerfChart from "./chart/RadarChart";
 import KeyData from "./KeyData";
 import getData from "../api/getData";
+import PropTypes from "prop-types";
 
 function UserPage() {
     const { id } = useParams()
@@ -47,6 +48,10 @@ function UserPage() {
             </div>
         </div>
     )
+}
+
+UserPage.prototype = {
+    userName: PropTypes.object.isRequired
 }
 
 export default UserPage

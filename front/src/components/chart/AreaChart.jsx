@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, Rectangle } from "recharts";
 import styled from "styled-components";
 import getData from "../../api/getData";
+import PropTypes from "prop-types";
 
 /* ------------------------------------------------------------------------------------ */
 
@@ -115,6 +116,10 @@ function AverageChart() {
             </ResponsiveContainer>
         </Container>
     )
+}
+
+AverageChart.prototype = {
+    userAverage: PropTypes.array.isRequired
 }
 
 export default AverageChart

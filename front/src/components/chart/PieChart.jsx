@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import getData from "../../api/getData";
+import PropTypes from "prop-types";
 
 const Container = styled.div`
     position: relative;
@@ -83,6 +84,10 @@ function ScoreChart() {
             </Text>
         </Container>
     )
+}
+
+ScoreChart.propTypes = {
+    score: PropTypes.object.isRequired
 }
 
 export default ScoreChart
