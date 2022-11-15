@@ -62,7 +62,7 @@ function RadarPerfChart() {
     )
 }
 
-RadarChart.prototype = {
+RadarPerfChart.prototype = {
     userPerf: PropTypes.array.isRequired
 }
 

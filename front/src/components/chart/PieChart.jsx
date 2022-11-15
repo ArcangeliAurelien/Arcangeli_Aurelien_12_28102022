@@ -87,7 +87,7 @@ function ScoreChart() {
 }
 
 ScoreChart.propTypes = {
-    score: PropTypes.object.isRequired
+    score: PropTypes.number,
 }
 
 export default ScoreChart
