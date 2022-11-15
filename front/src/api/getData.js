@@ -1,4 +1,4 @@
-import { getUserInfos, getUserActivity, getUserAverage, getUserPerformance } from '../api/dataMocked'
+import { getUserInfos, getUserActivity, getUserAverage, getUserPerformance } from '../api/CallApi'
 
 /**
  * @param {string} type

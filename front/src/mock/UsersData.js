@@ -2,7 +2,7 @@ export const users = [
     {
         "id": 12,
         "userInfos": {
-            "firstName": "Karl",
+            "firstName": "Karl mocked",
             "lastName": "Dovineau",
             "age": 31
         },
@@ -18,7 +18,7 @@ export const users = [
     {
         "id": 18,
         "userInfos": {
-            "firstName": "Cecilia",
+            "firstName": "Cecilia mocked",
             "lastName": "Ratorez",
             "age": 34
         },
