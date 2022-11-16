@@ -19,7 +19,7 @@ const xAxisFormatter = (kind) => {
 
 const Container = styled.div`
     position: relative;
-	max-width: 280px;
+	max-width: 258px;
     width: 100%;
 	display: flex;
 	flex-direction: column;

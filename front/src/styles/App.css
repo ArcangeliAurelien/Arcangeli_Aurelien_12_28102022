@@ -11,6 +11,7 @@ html {
 
 .blocText {
     margin-left: 107px;
+    max-width: 1126px;
 }
 
 .blocText a {
@@ -44,10 +45,60 @@ html {
     justify-content: space-between;
 }
 
-
+.AllCharts {
+    max-height: 779px;
+    max-width: 835px;
+    width: 100%;
+}
 
 .charts {
     display: flex;
     justify-content: space-between;
     height: 263px;
+}
+
+/*---------------------------------------------------------*/
+
+@media screen and (max-width: 1400px) {
+    .blocText {
+        margin-left: 57px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .blocText {
+        margin-right: 31px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .blocText {
+        margin-right: 57px;
+    }
+
+    .blocData {
+        flex-direction: column;
+    }
+
+    .AllCharts {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .AllCharts {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .AllCharts {
+        max-width: 835px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blocText {
+            margin-left: 27px;
+        }
 }

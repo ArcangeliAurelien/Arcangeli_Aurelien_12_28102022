@@ -1,8 +1,8 @@
 .infos {
-    width: 258px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 258px;
 }
 
 .keyData {
@@ -27,4 +27,30 @@
     font-size: 14px;
     font-weight: bold;
     color: #74798C;
+}
+
+/*---------------------------------------------------------*/
+
+@media screen and (max-width: 1310px) {
+    .infos {
+        flex-direction: row;
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .keyData {
+        padding: 21px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .infos {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .infos {
+        max-width: 835px;
+    }
 }

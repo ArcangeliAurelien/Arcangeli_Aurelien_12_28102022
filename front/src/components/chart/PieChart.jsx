@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 const Container = styled.div`
     position: relative;
-    max-width: 280px;
+    max-width: 258px;
     width: 100%;
     background: #FBFBFB;
     border-radius: 5px;

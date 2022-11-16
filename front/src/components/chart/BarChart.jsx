@@ -6,10 +6,6 @@ import getData from "../../api/getData";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
-    max-width: 835px;
-    max-height: 320px;
-    width: 100%;
-    height: 100%;
     margin-bottom: 28px;
 	border-radius: 5px;
 	background-color: #fbfbfb;
@@ -131,7 +127,7 @@ function ActivitiesChart() {
                     </Info>
                 </LegendChart>
             </Head>
-            <ResponsiveContainer height="85%">
+            <ResponsiveContainer width="100%" aspect={3}>
                 <BarChart
                     width={7}
                     data={userActivity}
