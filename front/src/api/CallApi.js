@@ -1,6 +1,6 @@
 import { users, usersActivities, usersAverage, usersPerformance } from '../mock/UsersData'
 
-const mocked_data = false;
+const mocked_data = true;
 const url = `http://localhost:3000/user/`
 
 /**
