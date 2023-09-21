@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/ArcangeliAurelien_12_28102022/static/css/main.99f8c998.css",
-    "main.js": "/ArcangeliAurelien_12_28102022/static/js/main.a49a9b30.js",
-    "static/js/787.71df535f.chunk.js": "/ArcangeliAurelien_12_28102022/static/js/787.71df535f.chunk.js",
-    "static/media/logo.svg": "/ArcangeliAurelien_12_28102022/static/media/logo.837414860efdf652f26ae7be654e06c5.svg",
-    "static/media/natation.svg": "/ArcangeliAurelien_12_28102022/static/media/natation.e26dba434236828a108a786d8215cd31.svg",
-    "static/media/cyclisme.svg": "/ArcangeliAurelien_12_28102022/static/media/cyclisme.d516c0e89dbb3aaab23afac6a130ca06.svg",
-    "static/media/glucides.svg": "/ArcangeliAurelien_12_28102022/static/media/glucides.aa0e74661df8c71ea59cbe777ac24615.svg",
-    "static/media/lipides.svg": "/ArcangeliAurelien_12_28102022/static/media/lipides.82c6cb9fd2b3e6307fca82c2f796ed14.svg",
-    "static/media/proteines.svg": "/ArcangeliAurelien_12_28102022/static/media/proteines.c285979616f56dc9dfa457e51c583d68.svg",
-    "static/media/meditation.svg": "/ArcangeliAurelien_12_28102022/static/media/meditation.6c31a2775a609d06fd5d99eb347250ed.svg",
-    "index.html": "/ArcangeliAurelien_12_28102022/index.html",
-    "static/media/calories.svg": "/ArcangeliAurelien_12_28102022/static/media/calories.5db5a3aff9bd8f441f49792782c8262e.svg",
-    "static/media/musculation.svg": "/ArcangeliAurelien_12_28102022/static/media/musculation.4fe7fb9fe3554121b3d42dcb489eefd0.svg",
-    "main.99f8c998.css.map": "/ArcangeliAurelien_12_28102022/static/css/main.99f8c998.css.map",
-    "main.a49a9b30.js.map": "/ArcangeliAurelien_12_28102022/static/js/main.a49a9b30.js.map",
-    "787.71df535f.chunk.js.map": "/ArcangeliAurelien_12_28102022/static/js/787.71df535f.chunk.js.map"
+    "main.css": "/ArcangeliAurelien_12_28102022/front/static/css/main.99f8c998.css",
+    "main.js": "/ArcangeliAurelien_12_28102022/front/static/js/main.60a585dc.js",
+    "static/js/787.71df535f.chunk.js": "/ArcangeliAurelien_12_28102022/front/static/js/787.71df535f.chunk.js",
+    "static/media/logo.svg": "/ArcangeliAurelien_12_28102022/front/static/media/logo.837414860efdf652f26ae7be654e06c5.svg",
+    "static/media/natation.svg": "/ArcangeliAurelien_12_28102022/front/static/media/natation.e26dba434236828a108a786d8215cd31.svg",
+    "static/media/cyclisme.svg": "/ArcangeliAurelien_12_28102022/front/static/media/cyclisme.d516c0e89dbb3aaab23afac6a130ca06.svg",
+    "static/media/glucides.svg": "/ArcangeliAurelien_12_28102022/front/static/media/glucides.aa0e74661df8c71ea59cbe777ac24615.svg",
+    "static/media/lipides.svg": "/ArcangeliAurelien_12_28102022/front/static/media/lipides.82c6cb9fd2b3e6307fca82c2f796ed14.svg",
+    "static/media/proteines.svg": "/ArcangeliAurelien_12_28102022/front/static/media/proteines.c285979616f56dc9dfa457e51c583d68.svg",
+    "index.html": "/ArcangeliAurelien_12_28102022/front/index.html",
+    "static/media/meditation.svg": "/ArcangeliAurelien_12_28102022/front/static/media/meditation.6c31a2775a609d06fd5d99eb347250ed.svg",
+    "static/media/calories.svg": "/ArcangeliAurelien_12_28102022/front/static/media/calories.5db5a3aff9bd8f441f49792782c8262e.svg",
+    "static/media/musculation.svg": "/ArcangeliAurelien_12_28102022/front/static/media/musculation.4fe7fb9fe3554121b3d42dcb489eefd0.svg",
+    "main.99f8c998.css.map": "/ArcangeliAurelien_12_28102022/front/static/css/main.99f8c998.css.map",
+    "main.60a585dc.js.map": "/ArcangeliAurelien_12_28102022/front/static/js/main.60a585dc.js.map",
+    "787.71df535f.chunk.js.map": "/ArcangeliAurelien_12_28102022/front/static/js/787.71df535f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99f8c998.css",
-    "static/js/main.a49a9b30.js"
+    "static/js/main.60a585dc.js"
   ]
 }
